@@ -16,7 +16,10 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
-    
+  
+	<style> .blink { animation: blink-animation 1s steps(5, start) infinite; -webkit-animation: blink-animation 1s steps(5, start) infinite; } @keyframes blink-animation {
+to { .visibility: hidden; } } @-webkit-keyframes blink-animation { to { visibility: hidden; } }
+</style>
 
 </head> 
 
@@ -73,9 +76,8 @@
 		    <div class="container">
 			    <h2 class="title mb-3">About Me</h2>
 			    <figure><img class="img-fluid" src="assets/images/about-me.jpg" alt="image"></figure>
-			    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-<p id="demo"></p>
-			    <blink><a href="https://www.paypal.me/kageoychannel"><b> <span style="color: #ff00cc;">Donation with paypal </span></b></a></blink>
+			    
+			    <a href="https://www.paypal.me/kageoychannel"><b> <span class="blink" style="color: #ff00cc;">Donation with paypal </span></b></a>
 			 <p>Bismillah <strong>assalamu'alaikum wr.wb</strong></p><br>
 <p>blog ini hanya untuk berbagi link</p><br>
 <p>maaf jika blog ini kurang menarik atau jelek,karena saya masih dalam proses belajar</p>
